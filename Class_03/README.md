@@ -1,0 +1,23 @@
+- `uname` - The uname command is used to print basic system information. (https://linuxize.com/post/uname-command-in-linux/)
+- `uname -a` - The command that is used to print all system information. 
+- `who ` - Display who is logged on. (https://www.dummies.com/computers/operating-systems/linux/common-linux-commands/)
+- `pwd ` - Use the pwd command to find out the path of the current working directory (folder) you’re in. 
+- `cd` - Change directory.
+- `cd + directory name` -  is used to change the current working directory in Linux and other Unix-like operating systems (e.g. "cd ." , "cd ..", "cd m", etc.).
+- `whoami` - Print effective userid
+- `echo` - echo command in linux is used to display line of text/string that are passed as an argument . (https://www.geeksforgeeks.org/echo-command-in-linux-with-examples/).This command is used to move some data into a file.
+- `echo $0` - it will display "$0"
+- `exit` - cause normal process termination.
+- `pwd ` - to find out the path of the current working directory you’re in. 
+- `man + "command"` -  used to display the user manual of any command that we can run on the terminal. (can be used in cocalc.com)
+- `ls` - to display the list of content of the directory.
+- `ls -l` - it will show the list of "l"
+- `ls -a` - it will show the list of "a"
+- `ls -la (or -al)`
+- `clear` - Clear a command line screen/window for a fresh start. (сtrl + l is a hotkey for this as well).
+- `TAB` - is a hotkey used to fill in a suggested word if possible. 
+- `up and down arrows` - Using the up and down arrow keys, you can recall previously-entered commands to the command line.
+- `bash` - is a Unix shell and command language.
+- `sh` - Unix shell.
+- `tree` - tree is a recursive directory listing program that produces a depth-indented listing of files.
+- `( rw-r--r-- )` - The permissions can have a different meaning depending on the file type. It means that the file owner has read and write permissions ( rw- ), the group and others have only read permissions ( r-- ).
