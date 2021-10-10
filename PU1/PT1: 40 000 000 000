@@ -1,0 +1,19 @@
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    long num1=0, num2=0;
+    printf("Enter number 1\n");
+     scanf("%ld", &num1);
+        printf("Enter number 2\n");
+    
+   
+     scanf("%ld", &num2);
+     long c= num1*num2;
+     
+     printf ("%ld\n",c);
+     printf("%ld\n", sizeof(c));
+    return 0;
+}
