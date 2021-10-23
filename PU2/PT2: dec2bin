@@ -1,9 +1,0 @@
-{
-        printf("Enter decimal number\n");
-        char a;
-        scanf("%d", & a);
-        for(int i=7; i >= 0; --i)
-                printf("%d", (a >> i) & 1 ? 1 : 0 );
-                printf("\n");
-        return 0;
-}
