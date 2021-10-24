@@ -1,0 +1,64 @@
+#include <stdio.h> 
+ 
+int main() 
+{ 
+    char firstChar, 
+        secondChar, 
+        thirdChar, 
+        swapChar; 
+    int conditionalVariable = 0; 
+    printf("Enter 3 letters: "); 
+    scanf("%c", &firstChar); 
+    scanf(" %c", &secondChar); 
+    scanf(" %c", &thirdChar); 
+    printf("Alphabet(1) or opposite(2)?\n"); 
+    printf("Type number '1' or number '2' - "); 
+    scanf("%d", &conditionalVariable); 
+    printf("%d\n", conditionalVariable); 
+    if (conditionalVariable == 1) 
+    { 
+        if (firstChar > secondChar) 
+        { 
+            swapChar = firstChar; 
+            firstChar = secondChar; 
+            secondChar = swapChar; 
+        } 
+        if (secondChar > thirdChar) 
+        { 
+            swapChar = secondChar; 
+            secondChar = thirdChar; 
+            thirdChar = swapChar; 
+        } 
+        if (firstChar > secondChar) 
+        { 
+            swapChar = firstChar; 
+            firstChar = secondChar; 
+            secondChar = swapChar; 
+        } 
+    } 
+    else 
+    { 
+        if (firstChar < secondChar) 
+        { 
+            swapChar = firstChar; 
+            firstChar = secondChar; 
+            secondChar = swapChar; 
+        } 
+        if (secondChar < thirdChar) 
+        { 
+            swapChar = secondChar; 
+            secondChar = thirdChar; 
+            thirdChar = swapChar; 
+        } 
+        if (firstChar < secondChar) 
+        { 
+            swapChar = firstChar; 
+            firstChar = secondChar; 
+            secondChar = swapChar; 
+        } 
+    } 
+    printf("%c ", firstChar); 
+    printf("%c ", secondChar); 
+    printf("%c ", thirdChar); 
+    return 0; 
+}
