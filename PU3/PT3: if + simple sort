@@ -2,6 +2,69 @@
  
 int main() 
 { 
+    int firstNumber = 0, 
+        secondNumber = 0, 
+        thirdNumber = 0, 
+        conditionalVariable = 0, 
+        swapNumber = 0; 
+    printf ("Enter 3 Decimal numbers: "); 
+    scanf("%d", &firstNumber); 
+    scanf("%d", &secondNumber); 
+    scanf("%d", &thirdNumber); 
+    printf("Ascendind(1) or descending(2)?\n"); 
+    printf("Type number '1' or number '2' - "); 
+    scanf("%d", &conditionalVariable); 
+    if (conditionalVariable == 1) 
+    { 
+        if (firstNumber > secondNumber) 
+        { 
+            swapNumber = firstNumber; 
+            firstNumber = secondNumber; 
+            secondNumber = swapNumber; 
+        } 
+        if (secondNumber > thirdNumber) 
+        { 
+            swapNumber = secondNumber; 
+            secondNumber = thirdNumber; 
+            thirdNumber = swapNumber; 
+        } 
+        if (firstNumber > secondNumber) 
+        { 
+            swapNumber = firstNumber; 
+            firstNumber = secondNumber; 
+            secondNumber = swapNumber; 
+        } 
+    } 
+    else 
+    { 
+        if (firstNumber < secondNumber) 
+        { 
+            swapNumber = firstNumber; 
+            firstNumber = secondNumber; 
+            secondNumber = swapNumber; 
+        } 
+        if (secondNumber < thirdNumber) 
+        { 
+            swapNumber = secondNumber; 
+            secondNumber = thirdNumber; 
+            thirdNumber = swapNumber; 
+        } 
+        if (firstNumber < secondNumber) 
+        { 
+            swapNumber = firstNumber; 
+            firstNumber = secondNumber; 
+            secondNumber = swapNumber; 
+        } 
+    } 
+    printf ("%d ", firstNumber); 
+    printf ("%d ", secondNumber); 
+    printf("%d ", thirdNumber); 
+    return 0; 
+}
+#include <stdio.h> 
+ 
+int main() 
+{ 
     char firstChar, 
         secondChar, 
         thirdChar, 
