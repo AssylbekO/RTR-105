@@ -1,127 +1,129 @@
+1st program
 #include <stdio.h> 
  
 int main() 
 { 
-    int firstNumber = 0, 
-        secondNumber = 0, 
-        thirdNumber = 0, 
+    int num1 = 0, 
+        num2 = 0, 
+        num3 = 0, 
         conditionalVariable = 0, 
         swapNumber = 0; 
-    printf ("Enter 3 Decimal numbers: "); 
-    scanf("%d", &firstNumber); 
-    scanf("%d", &secondNumber); 
-    scanf("%d", &thirdNumber); 
-    printf("Ascendind(1) or descending(2)?\n"); 
+    printf ("Dear user, please enter 3 decimal numbers: "); 
+    scanf("%d", &num1); 
+    scanf("%d", &num2); 
+    scanf("%d", &num3); 
+    printf("Ascending(1) or Descending(2)?\n"); 
     printf("Type number '1' or number '2' - "); 
     scanf("%d", &conditionalVariable); 
     if (conditionalVariable == 1) 
     { 
-        if (firstNumber > secondNumber) 
+        if (num1 > num2) 
         { 
-            swapNumber = firstNumber; 
-            firstNumber = secondNumber; 
-            secondNumber = swapNumber; 
+            swapNumber = num1; 
+            num1 = num2; 
+            num2 = swapNumber; 
         } 
-        if (secondNumber > thirdNumber) 
+        if (num2 > num3) 
         { 
-            swapNumber = secondNumber; 
-            secondNumber = thirdNumber; 
-            thirdNumber = swapNumber; 
+            swapNumber = num2; 
+            num2 = num3; 
+            num3 = swapNumber; 
         } 
-        if (firstNumber > secondNumber) 
+        if (num1 > num2) 
         { 
-            swapNumber = firstNumber; 
-            firstNumber = secondNumber; 
-            secondNumber = swapNumber; 
+            swapNumber = num1; 
+            num1 = num2; 
+            num2 = swapNumber; 
         } 
     } 
     else 
     { 
-        if (firstNumber < secondNumber) 
+        if (num1 < num2) 
         { 
-            swapNumber = firstNumber; 
-            firstNumber = secondNumber; 
-            secondNumber = swapNumber; 
+            swapNumber = num1; 
+            num1 = num2; 
+            num2 = swapNumber; 
         } 
-        if (secondNumber < thirdNumber) 
+        if (num2 < num3) 
         { 
-            swapNumber = secondNumber; 
-            secondNumber = thirdNumber; 
-            thirdNumber = swapNumber; 
+            swapNumber = num2; 
+            num2 = num3; 
+            num3 = swapNumber; 
         } 
-        if (firstNumber < secondNumber) 
+        if (num1 < num2) 
         { 
-            swapNumber = firstNumber; 
-            firstNumber = secondNumber; 
-            secondNumber = swapNumber; 
+            swapNumber = num1; 
+            num1 = num2; 
+            num2 = swapNumber; 
         } 
     } 
-    printf ("%d ", firstNumber); 
-    printf ("%d ", secondNumber); 
-    printf("%d ", thirdNumber); 
+    printf ("Here is the result:\n");
+    printf ("%d ", num1); 
+    printf ("%d ", num2); 
+    printf("%d ", num3); 
     return 0; 
 }
+
+2nd program
 #include <stdio.h> 
  
 int main() 
 { 
-    char firstChar, 
-        secondChar, 
-        thirdChar, 
-        swapChar; 
+    char char1, char2, char3, swapChar; 
     int conditionalVariable = 0; 
-    printf("Enter 3 letters: "); 
-    scanf("%c", &firstChar); 
-    scanf(" %c", &secondChar); 
-    scanf(" %c", &thirdChar); 
-    printf("Alphabet(1) or opposite(2)?\n"); 
+    printf("Dear user, please enter 3 letters: "); 
+    scanf("%c", &char1); 
+    scanf(" %c", &char2); 
+    scanf(" %c", &char3); 
+    printf("Alphabetical order(1) or reverse order(2)?\n"); 
     printf("Type number '1' or number '2' - "); 
     scanf("%d", &conditionalVariable); 
     printf("%d\n", conditionalVariable); 
     if (conditionalVariable == 1) 
     { 
-        if (firstChar > secondChar) 
+        if (char1 > char2) 
         { 
-            swapChar = firstChar; 
-            firstChar = secondChar; 
-            secondChar = swapChar; 
+            swapChar = char1; 
+            char1 = char2; 
+            char2 = swapChar; 
         } 
-        if (secondChar > thirdChar) 
+        if (char2 > char3) 
         { 
-            swapChar = secondChar; 
-            secondChar = thirdChar; 
-            thirdChar = swapChar; 
+            swapChar = char2; 
+            char2 = char3; 
+            char3 = swapChar; 
         } 
-        if (firstChar > secondChar) 
+        if (char1 > char2) 
         { 
-            swapChar = firstChar; 
-            firstChar = secondChar; 
-            secondChar = swapChar; 
+            swapChar = char1; 
+            char1 = char2; 
+            char2 = swapChar; 
         } 
     } 
     else 
     { 
-        if (firstChar < secondChar) 
+        if (char1 < char2) 
         { 
-            swapChar = firstChar; 
-            firstChar = secondChar; 
-            secondChar = swapChar; 
+            swapChar = char1; 
+            char1 = char2; 
+            char2 = swapChar; 
         } 
-        if (secondChar < thirdChar) 
+        if (char2 < char3) 
         { 
-            swapChar = secondChar; 
-            secondChar = thirdChar; 
-            thirdChar = swapChar; 
+            swapChar = char2; 
+            char2 = char3; 
+            char3 = swapChar; 
         } 
-        if (firstChar < secondChar) 
+        if (char1 < char2) 
         { 
-            swapChar = firstChar; 
-            firstChar = secondChar; 
-            secondChar = swapChar; 
+            swapChar = char1; 
+            char1 = char2; 
+            char2 = swapChar; 
         } 
     } 
-    printf("%c ", firstChar); 
-    printf("%c ", secondChar); 
-    printf("%c ", thirdChar); 
+    printf ("Here is the result:\n");
+    printf("%c ", char1); 
+    printf("%c ", char2); 
+    printf("%c ", char3); 
     return 0; 
 }
