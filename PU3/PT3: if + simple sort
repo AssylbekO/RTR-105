@@ -1,0 +1,130 @@
+1st program
+#include <stdio.h> 
+
+int main() 
+{
+     int num1 = 0, 
+        num2 = 0, 
+        num3 = 0, 
+        tomato = 0, 
+        onion = 0; 
+         printf ("Dear user, please enter 3 decimal numbers: "); 
+    scanf("%d", &num1); 
+    scanf("%d", &num2); 
+    scanf("%d", &num3); 
+    printf("Ascending(1) or Descending(2)?\n"); 
+    printf("Type number '1' or number '2' - "); 
+    scanf("%d", &tomato); 
+    if (tomato == 1) 
+    { 
+         if (num1 > num2) 
+        { 
+            onion = num1; 
+            num1 = num2; 
+            num2 = onion; 
+        } 
+        if (num2 > num3) 
+        { 
+            onion = num2; 
+            num2 = num3; 
+            num3 = onion;
+        } 
+         if (num1 > num2) 
+        { 
+            onoin = num1; 
+            num1 = num2; 
+            num2 = onion; 
+        } 
+    } 
+    else 
+    { 
+        if (num1 < num2) 
+        { 
+            onion = num1; 
+            num1 = num2; 
+            num2 = onion; 
+        } 
+        if (num2 < num3) 
+        { 
+            onion = num2; 
+            num2 = num3; 
+            num3 = onion; 
+        } 
+         if (num1 < num2) 
+        { 
+            onion = num1; 
+            num1 = num2; 
+            num2 = onion; 
+        } 
+    } 
+    printf ("Here is the result:\n");
+    printf ("%d ", num1); 
+    printf ("%d ", num2); 
+    printf("%d ", num3); 
+    return 0; 
+}
+2nd program
+
+
+#include <stdio.h> 
+
+int main() 
+{ 
+    char char1, char2, char3, onion; 
+    int tomato = 0; 
+    printf("Dear user, please enter 3 letters: "); 
+    scanf("%c", &char1); 
+    scanf(" %c", &char2); 
+    scanf(" %c", &char3); 
+    printf("Alphabetical order(1) or reverse order(2)?\n"); 
+    printf("Type number '1' or number '2' - "); 
+    scanf("%d", &tomato); 
+    printf("%d\n", tomato); 
+    if (tomato == 1) 
+    { 
+        if (char1 > char2) 
+        { 
+            onion = char1; 
+            char1 = char2; 
+            char2 = onion; 
+        } 
+        if (char2 > char3) 
+        { 
+            onion = char2; 
+            char2 = char3; 
+            char3 = onion; 
+        } 
+         if (char1 > char2) 
+        { 
+             onion = char1; 
+            char1 = char2; 
+            char2 = onion; 
+        } 
+    } 
+    else 
+    { 
+        if (char1 < char2) 
+        { 
+            onion = char1; 
+            char1 = char2; 
+            char2 = onion; 
+        } 
+        if (char2 < char3) 
+        { 
+            onion = char2; 
+            char2 = char3; 
+            char3 = onion; 
+        } 
+         if (char1 < char2) 
+        { 
+            onion = char1; 
+            char1 = char2; 
+            char2 = onion; 
+        } 
+    } 
+     printf ("Here is the result:\n");
+    printf("%c ", char1); 
+    printf("%c ", char2); 
+    printf("%c ", char3); 
+    return 0; 
+}
