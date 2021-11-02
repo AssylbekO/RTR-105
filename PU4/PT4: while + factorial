@@ -1,0 +1,98 @@
+#include <stdio.h>
+
+int main()
+{   
+    int num, data;
+    printf("Dear user, please enter a number to get factorial:\n");
+    scanf("%d", &num);
+    printf("Dear user, please choose data type - char(1), int(2), long long(3)\n");
+    scanf("%d", &data);
+    
+    if ( data == 1 )
+    {  
+        char z = num, fact;
+        char i = 1;
+        if (num > 0 )
+        {
+              while (num > 0)
+            {  
+                fact = i;
+                i = num * i;
+                num = num-1;
+                if (fact>i) break;
+            }
+             if (fact>i)
+                {
+                    printf ("Unfortunately, the number is too big for this data type");
+                }
+                 else
+                {
+                    printf ("Factorial of %hhd - %hhd", z, fact); 
+                }
+        }
+            else
+            {
+                printf("Factorial of 0 = 1");
+            }
+    }
+    if (data == 2 )
+    {
+        int z = num, fact;
+        int i = 1;
+             if (num > 0 )
+        {
+                while (num > 0)
+                {  
+                    fact = i;
+                    i = num * i;
+                    num = num-1;
+                    if (fact>i) break;
+                }        
+                if (fact>i)
+                {  
+                    printf ("Unfortunately, the number is too big for this data type");
+                }
+                else
+                {
+                    printf ("Factorial of %d - %d", z, fact); 
+                }
+        }
+            else
+            {
+                printf("Factorial of 0 = 1");
+            }
+    }
+    if (data == 3)
+    {
+        long long z = num, fact;
+        long long i = 1;
+        if (num > 0 )
+        {
+            while (num > 0)
+            {  
+                fact = i;
+                i = num * i;
+                num = num-1;
+                if(fact>i) break;
+            }
+            if (fact>i)
+            {
+                printf ("Unfortunately, the number is too big for this data type");
+            }
+            else
+            {
+                printf ("Factorial of %lld - %lld", z, fact); 
+            }
+        }
+            else
+            {
+                printf("Factorial of 0 = 1");
+            }
+    }
+    
+    
+    
+printf("\n");
+return 0;
+}
+
