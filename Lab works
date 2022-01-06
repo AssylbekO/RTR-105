@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<math.h>
+double
+my_sinus (double x)
+{
+  double a,S;
+  int k = 0;
+ 
+  a = pow (-1, k) * pow (x, 2 * k) / (pow (1, 2) * pow (4, k));
+  S = a;
+  printf ("%.2f\t%8.2f\t%8.2f\n", x, a, S);
+  
+  while (k < 5)
+    {
+      k++;
+      a = a * (-1) * x * x / ((2 * k) * (2 * k));
+      S = S + a;
+      printf ("%.2f\t%8.2f\t%8.2f\n", x, a, S);
+    }
+    return S;
+}
+void 
+main (){
+    double x, y, yy;
+    printf("Enter value of x where f(x) = bessj0(x)\n");
+    scanf(" %lf", &x);
+     y = j0 (x);
+    printf("standard function sin - y = sin (%.2f)=%.2f\n", x, y);
+    yy = my_sinus (x);
+    printf("user function - y = my_sinus (%.2f)=%.2f\n", x, yy);
+    printf(" \n");
+printf(" \n");
+printf("\t                  500 \n");
+printf(" \t              ————————          \n");
+printf(" \t               \\                         k    2·k           \n");
+printf(" \t                \\                    (-1)  · х           \n");
+printf("\t bessj0(%.2f) ≈  >             ————————————————————————   \n", x);
+printf(" \t                /                        2    k              \n");
+printf(" \t               /                     (k!)  · 4                  \n");
+printf("\t               ————————   \n"); 
+printf("\t                 k = 0     \n");
+printf("\n");
+printf("\n");
+printf("\n");
+printf("\t                                  2                 \n");
+printf("\t                           (-1)· x                  \n");
+printf("\trecurrence factor: ——————————————————————————————    \n");
+printf(" \t                                 2                  \n");
+printf(" \t                          4  ·  k                    \n");
+printf("\t                                                     \n"); 
+}
