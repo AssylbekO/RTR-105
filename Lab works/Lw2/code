@@ -1,0 +1,63 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+    
+    float a,b,c,x,delta_x,funkcA,funkcB;
+    int k = 0;
+    
+      StartA:
+    printf("1) Dear user, please choose the left border for x-axis: \n" );
+    scanf("%f", &a);
+    printf("2) Dear user, please choose the right border for x-axis: \n" );
+    scanf("%f", &b); 
+    funkcA = j0(a);
+    funkcB = j0(b);
+    x=(a+b)/2;
+  
+      if (b<a){
+          printf ("Sorry, the value of right border can't be smaller than value of left!\n ");
+          printf ("Please choose different variable for right border!");
+          goto StartA;
+    }
+       StartC:
+    printf ("3) Dear user, please choose the value of the C (J0=C):\n");
+       scanf("%f", &c);
+       if (c>1 | c<0){
+           printf ("Value of 'C' can't exceed 1 and can't be below 0!");
+           goto StartC;
+       }
+       printf ("4) Dear user, please choose the desired precision:\n");
+       scanf ("%f", &delta_x);
+   
+       if ((funkcA*funkcB)>0.0){
+           printf ("For the interval [%.2f;%.2f] for the function J0=C there are \n", a, b);
+           printf ("No roots (or the number of roots is even)!\n");
+           printf ("Dear user, please choose other numbers / shorten the interval!");
+           goto StartA;
+       }
+       else 
+           printf ("\nRoots are:\n");
+           printf(" #    \ta\t  b\t    x\t    J0(x)\n");
+           printf("%2d%10.5f%10.5f%10.5f%10.5f\n", k, a, b, x , j0(x));
+       while (fabs(b-a)>delta_x)
+       {
+         k++;
+         x = (a+b)/2;
+            if(j0(x) < c )
+             a=x;
+               else
+                b=x;
+            if(j0(x) > c )
+             b=x;
+               else 
+                a=x;
+       
+        printf("%2d%10.5f%10.5f%10.5f%10.5f\n", k, a, b, x , j0(x));
+           
+       }
+        printf("The root is located at x=%.3f, your j0(x) is %.3f\n", x, j0(x));
+       
+}
+      
+    
