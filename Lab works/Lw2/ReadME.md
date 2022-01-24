@@ -11,6 +11,13 @@ The output of the code with following values:
 
 ![2](https://user-images.githubusercontent.com/90827811/150865238-5ac6b7ee-c5f8-4f4f-a0b3-635e1ed0e2d0.png)
 
+
+
+Gnuplot output:
+
+![image](https://user-images.githubusercontent.com/90827811/150867960-91afac8b-e5fa-42b2-ad4f-087ccf036ad3.png)
+
+
 The code includes:
 
 1) Dialogue with a user obtaining the left border about x-axis:
