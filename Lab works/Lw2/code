@@ -31,8 +31,8 @@ int main(){
        scanf ("%f", &delta_x);
    
        if ((funkcA*funkcB)>0.0){
-           printf ("For the interval [%.2f;%.2f] for the function J0=C there are \n", a, b);
-           printf ("no roots (or the number of roots is even)!\n");
+           printf ("\n(!)For the interval [%.2f;%.2f] for the function J0=C there are \n", a, b);
+           printf ("no roots (or the number of roots is even)!\n\n");
            printf ("Dear user, please choose other numbers / shorten the interval!");
            goto StartA;
        }
