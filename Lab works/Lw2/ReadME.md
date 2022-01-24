@@ -1,3 +1,15 @@
+Laboratory work #2:
+Numerical Methods; Bisection Methods.
+
+Desctiption:
+The method consists of repeatedly bisecting the interval defined by these values and then selecting the subinterval in which the function changes sign, and therefore must contain a root.
+
+![image](https://user-images.githubusercontent.com/90827811/150868440-04b157f4-ef72-4bce-ae41-4375c4aab12c.png)
+
+
+Source: https://en.wikipedia.org/wiki/Bisection_method
+
+
 My function:
 Bessel fucntion (J0):
 
