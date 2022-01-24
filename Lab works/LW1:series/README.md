@@ -3,6 +3,8 @@ Numerical Methods; Taylor series
 
 Description: 
 In mathematics, the Taylor series of a function is an infinite sum of terms that are expressed in terms of the function's derivatives at a single point.
+
+
 ![image](https://user-images.githubusercontent.com/90827811/150868724-7a5952e4-84a0-4ee5-8e5f-799b05da40bd.png)
 
 ![4](https://user-images.githubusercontent.com/90827811/150868821-d78ca08f-83d0-4001-81ae-f6c3d9581c6e.png)
