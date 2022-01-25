@@ -5,29 +5,25 @@ void main(){
     int i;
     float y[N];
     float a ,b, x , prec; 
-    int k = 0;
-    
-printf("1) Dear user, please choose the value for a:\n");
-scanf("%f", &a);
-printf("2) Dear user, please choose the value for b:\n");
-scanf("%f", &b);
-printf("3) Dear user, please choose value of precision:\n");
-scanf("%f", &prec);
-  
-    for(int i=0 ; i<N ; i++ , x+=prec)
-    {
+    int k = 1;
+    printf("1) Dear user, please choose the value for a:\n");
+    scanf("%f", &a);
+    printf("2) Dear user, please choose the value for b:\n");
+    scanf("%f", &b);
+    printf("3) Dear user, please choose value of precision:\n");
+    scanf("%f", &prec);
+  x = a ;
+  for(int i=0 ; i<N ; i++ , x+=prec){
       y[i] = j0(x);
-    }
-x = a ;
-   
-printf(" #\t  x\t\tJ0(x)\t\tJ0\'(x)\t\tJ0\'(x)\t\tJ0\''(x)\t\tJ0\''(x)\n") ; 
+      
+  }
+    x = a ;
+   printf("#\tx\t\tJ0(x)\t\tJ0\'(x)\t\tJ0\'(x)\t\tJ0\''(x)\t\tJ0\''(x)\n") ; 
    
 
-    while(x < b)
-    {
+    for(i=0 ; i<N-1 ; i++ , x+=prec){
         k++;
-        y[i] = j0(x);
-        printf (" %2d %10.2f\t  %10.2f\t  %10.2f\t  %10.2f\t  %10.2f\t   %10.2f\n",k ,x , y[i], (-1)*j1(x), (j0(x + prec) - y[i])/prec,(j1(x)/(x))-y[i], ((-1)*j1(x+prec)-(-1)*j1(x)/prec));
-        x += prec;
+         printf ("%2d %10.2f\t  %10.2f\t  %10.2f\t  %10.2f\t  %10.2f\t   %10.2f\n",k ,x , y[i], (-1)*j1(x), (j0(x + prec) - y[i])/prec,(j1(x)/(x))-y[i], ((-1)*j1(x+prec)-(-1)*j1(x))/prec);
     }
-   }
+   printf (" %10.2f\t  %10.2f\t\n" ,x , y[i] );
+}
