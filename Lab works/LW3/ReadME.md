@@ -9,8 +9,8 @@ Numerical differentiation is the process of finding the numerical value of a der
 
 Gnuplot output:
 
+![image](https://user-images.githubusercontent.com/90827811/151035733-54da8e7a-5713-4583-83d2-a3879df1443a.png)
 
-![image](https://user-images.githubusercontent.com/90827811/150894533-12666d2a-15b3-4bfd-8fc4-8251ed26c8b6.png)
 
 
 
