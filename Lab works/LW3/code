@@ -5,7 +5,7 @@ void main(){
     int i;
     float y[N];
     float a ,b, x , prec; 
-    int k = 1;
+    int k = 0;
     printf("1) Dear user, please choose the value for a:\n");
     scanf("%f", &a);
     printf("2) Dear user, please choose the value for b:\n");
