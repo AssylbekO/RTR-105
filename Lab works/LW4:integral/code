@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <math.h>
+
+void main (){
+    float a, b , esp , h , integr1, integr2;
+    int k, n=2;
+    
+    printf ("1) Dear user, please choose the value for the left border on x-axis:\n");
+    scanf("%f", &a);
+    printf ("2) Dear user, please choose the value for the right border on x-axis:\n");
+    scanf("%f", &b);
+    printf ("3) Dear user, please choose the desired precision:\n");
+    scanf("%f", &esp);
+    
+    integr2= (b-a)*(j0(a)+j0(b))/n;
+    while (fabs(integr2-integr1)>esp || n==2){
+        n*=2;
+        h=(b-a)/n;
+        integr1 = integr2;
+        integr2 = 0.;
+        for (k=0; k<n;k++)
+        integr2+=h*j0(a+(k+0.5)*h);
+    
+    }
+    printf("Rectangle rule: %.3f\n",integr2 );
+    while (fabs(integr2 - integr1) > esp || n==2)
+	{
+		h = (b - a) / n;
+		integr1 = integr2;
+		integr2 = 0;
+		for (int i = 0; i < n; ++i) 
+		{
+			int x1,x2;
+			x1= a + i * h;
+			i+=1;
+			x2 = a + i * h;
+			integr2 += 0.5 * (x2 - x1) * j0((a+b)/2);
+		}
+		
+	}
+	printf("Trapezoidal rule: %.3f\n", integr2);
+	 while (fabs(integr2 - integr1) > esp || n==2)
+	{
+		int x1,x2,y;
+		n = 2*n;
+		h = (b - a) / n;
+	
+		for (int i = 0; i < n; ++i) 
+		{
+			
+			x1 += j0(a + i * h);
+			i+=1;
+			x2 += j0(a + i * h);
+			}
+			y = j0(a/2) + 4*x1 + 2*x2 - j0(b/2);
+		
+		    integr1 = (h / 3) * y;
+		
+		
+	}
+	printf ("Simpton's rule: %.3f\n",integr1 );
+    
+    
+}
