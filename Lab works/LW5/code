@@ -1,0 +1,116 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+void Array_sort(char arr[],int n )
+{ 
+  
+    int i=0 , j=0;
+    char d;
+
+    for(i=0 ; i<n ; i++)
+    {
+        for(j=0 ; j<n-1 ; j++)
+        {
+        
+            if(arr[j]>arr[j+1])
+            {
+            
+                 d        = arr[j];
+                arr[j]    = arr[j+1];
+                arr[j+1]  = d;
+            }
+        }
+    }
+    
+}
+char maximum_minimum(char arr[], int n,unsigned char *maximum, unsigned char *minimum)
+{
+    int i = 0;
+    for(i=0; i<n; i++)
+    {
+            if(arr[i]<*minimum)
+		 {
+		    *minimum=arr[i];
+		        
+	     }  
+		   if(arr[i]>*maximum)
+		 {
+		    *maximum=arr[i];
+		 }
+		   
+        
+    }
+}
+
+     
+          
+   char Find_average( char arr[], int n, float *avg) 
+{   
+    int i = 0;
+    for (i = 0 ; i< n ;i++){
+    *avg += arr[i];}
+}
+    
+    char Find_median(char arr[] , int n, char median)
+ 
+{
+    int n2=n/2;
+    
+    
+    if(n%2 == 0)
+    {
+        median = arr[n2-1];
+        printf("\n\nThe median is : %c\n",median);
+    }
+    
+    else{
+        median = arr[n/2];
+        printf("\n\nThe median is : %c\n",median);
+    }
+    
+}
+
+void main()
+{   int  c,k;
+    int i = 0;
+    float avg = 0;
+    char b[10000];
+    char arr[10000], cn [1000];char median;
+    unsigned char maximum = 0, minimum = 255;
+    
+    printf("1) Dear user, please choose your string:\n");
+    scanf(" %[^\n\n]", arr);
+    
+    int n = strlen(arr);
+    Array_sort(arr, n);
+    printf("2) your the sorted string is: %s \n", arr);
+    
+    printf("3) your corresponding string in ASCII is: \n   ");
+    
+    for(i; i < n; i++){
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+  
+    maximum_minimum(arr, n, &maximum, &minimum);
+    printf("5) minimum of the array is : '%c'",minimum);
+    printf("\n4) maximum of the array is : '%c'\n",maximum);
+    
+    
+    
+   
+    if( n%2 == 0)
+    {
+        median = arr[n/2-1];
+        printf("\n\n6) The median is : %c\n",median);
+    }
+  
+    else{
+        median = arr[n/2];
+        printf("\n\n6) The median is : %c\n",median);
+    }
+   
+    Find_average(arr, n, &avg);
+    printf("\n7) Your average value is: %.1f\n", avg/n);
+   
+}
